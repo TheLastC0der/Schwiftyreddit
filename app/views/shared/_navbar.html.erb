@@ -1,0 +1,22 @@
+<!-- Nav Bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="https://fontmeme.com/permalink/171205/bb98c50b414261996d6cdb020cc198f6.png" alt="get-schwifty-font" border="0"></a>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><%= link_to 'Submit link', new_link_path %></li>
+        <li><%= link_to 'Account', edit_user_registration_path %></li>
+        <li><%= link_to 'Sign up', new_user_registration_path %></li>
+        <li><%= link_to 'Sign in', new_user_session_path %></li>
+        <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+          </ul>
+    </div>
+  </div>
+</nav>
